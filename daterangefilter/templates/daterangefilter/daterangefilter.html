@@ -56,7 +56,7 @@
                 }
             });
             // set initial value
-            var range = "{{ choices.0.value }}";
+            var range = "{{ choices.0.value|safe }}";
             if (range != "") {
                 var vals = range.split(' - ');
                 if (vals.length == 2) {
